@@ -52,9 +52,7 @@ if ! $INCREMENTAL; then
       -DCURL_INCLUDE_DIR="$INSTALL_DIR/include" \
       -DCMAKE_INSTALL_PREFIX="$BUILD_DIR/luanti-install" \
       -G "Unix Makefiles" \
-      "$SOURCES_DIR/luanti"\
-      -DLIBZIP_LIBRARY="$INSTALL_DIR/lib/libzip.a" \
-      -DLIBZIP_INCLUDE_DIR="$INSTALL_DIR/include"
+      "$SOURCES_DIR/luanti"
 fi
 
 rm -rf "$BUILD_DIR/luanti-install"

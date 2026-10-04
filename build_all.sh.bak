@@ -14,7 +14,6 @@ emcc --clear-cache --clear-ports
 # Dependencies
 ./build_zstd.sh
 ./build_libarchive.sh # uses zstd
-./build_libzip.sh
 ./build_webshims.sh
 ./build_openssl.sh
 ./build_curl.sh      # uses webshims, openssl, zlib
